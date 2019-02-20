@@ -27,9 +27,7 @@ func main() {
 		"I have brought peace, freedom, justice, and security to my new empire.",
 		"He will join us or die!",
 		"You don’t know the power of the dark side.",
-
 	}
-
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, spreadTheWords(pillsOfVadersWisdom))
